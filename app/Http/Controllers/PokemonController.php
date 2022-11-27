@@ -140,7 +140,7 @@ class PokemonController extends Controller
 
             if (count($evolution_pokemon['chain']['evolves_to'][0]['evolves_to']) == 0) {
                 return response()->json([
-                    'error' => 'No mas evolucion.1'
+                    'error' => 'No more evolution.'
                 ]);
             }
 
@@ -149,7 +149,7 @@ class PokemonController extends Controller
 
             } else {
                 return response()->json([
-                    'error' => 'No mas evolucion.'
+                    'error' => 'No more evolution.'
                 ]);
             }
         }
